@@ -49,12 +49,11 @@ const Sidebar = () => {
                 Dashboard
               </Link>
             </ul>
-
             <ul>
               <p>USERS</p>
               <Link
-                className={pathName === '/users' ? classes.Active : ''}
-                to='/users'
+                className={pathName === '/authusers' ? classes.Active : ''}
+                to='/authusers'
               >
                 <span>
                   <PeopleAlt />
@@ -66,8 +65,8 @@ const Sidebar = () => {
             <ul>
               <p>PRODUCTS</p>
               <Link
-                className={pathName === '/products' ? classes.Active : ''}
-                to='/products'
+                className={pathName === '/createProduct' ? classes.Active : ''}
+                to='/createProduct'
               >
                 <span>
                   <CameraAlt />
@@ -76,15 +75,15 @@ const Sidebar = () => {
               </Link>
             </ul>
             <ul>
-              <p>ORDERS</p>
+              <p>Admin</p>
               <Link
-                className={pathName === '/orders' ? classes.Active : ''}
-                to='/orders'
+                className={pathName === '/usersproduct' ? classes.Active : ''}
+                to='/usersproduct'
               >
                 <span>
                   <LocalMall />
                 </span>
-                Orders
+                Admin
               </Link>
             </ul>
             <ul>
@@ -111,7 +110,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className={classes.BottomContainer}>
-          <p>Manish Mandal © 2021 </p>
+          <p>Jangbu Sherpa © 2022 </p>
         </div>
       </div>
     )

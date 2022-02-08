@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import axios from 'axios';
 
 import './index.scss';
@@ -11,7 +11,7 @@ import store from './Store/Store';
 axios.defaults.baseURL = 'https://growmart.herokuapp.com/';
 // axios.defaults.baseURL = 'http://localhost:5000';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#4DAE65',
